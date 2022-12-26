@@ -8,6 +8,6 @@ import com.exhibition.homepage.entity.RvMember;
 
 public interface RvMemberRepository extends JpaRepository<RvMember, Integer> {
 	
-	public Optional<RvMember> findByUserid(String mUserId);
+	public Optional<RvMember>  findByMuserid(String muserid);
 
 }

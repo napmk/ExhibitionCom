@@ -14,11 +14,11 @@ import lombok.RequiredArgsConstructor;
 @Service
 @RequiredArgsConstructor
 public class ReservationService {
-	private final ReservationRepository reservationRepository;
+	private final ReservationRepository ReservationRepository;
 	
 	
 	public List<Reservation> getList(){
-		List<Reservation> reservations = reservationRepository.findAll();
+		List<Reservation> reservations = ReservationRepository.findAll();
 		
 		List<ReservationDto> reservationsDtos = new ArrayList<ReservationDto>();
 		
