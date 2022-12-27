@@ -36,10 +36,6 @@ public class MainController {
 		
 		return "index";
 	}
-	
-	
-	 
-
 
 	@RequestMapping(value = "/join")
 		public String join(MemberForm memberForm) {
@@ -65,4 +61,8 @@ public class MainController {
 			return "redirect:index";
 		}
 		
+	@RequestMapping(value = "/login")
+	public String login() {
+		return "login_form";
+	}
 }
